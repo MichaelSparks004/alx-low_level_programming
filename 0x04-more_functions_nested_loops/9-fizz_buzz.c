@@ -1,12 +1,12 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
  * fizz_buzz -> printing to 100
+ *
  * Return: void
  */
 
-void fizz_buzz(void)
+int fizz_buzz(void)
 {
 	int x = 100;
 	int i;
