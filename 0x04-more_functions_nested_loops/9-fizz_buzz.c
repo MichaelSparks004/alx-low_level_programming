@@ -3,25 +3,37 @@
 
 /**
  * fizz_buzz -> printing to 100
+ * Return: void
  */
 
 void fizz_buzz(void)
 {
-	int x;
+	int x = 100;
+	int i;
 
-	for (x = 1; x <= 100; x++)
+	i = 1;
+	while (i <= x)
 	{
-		if (x == 100)
-			printf("Buzz");
-		else if (x % 3 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
+		{
 			printf("FizzBuzz ");
-		else if (x % 3 == 0)
+		else if (i % 3 == 0)
 			printf("Fizz ");
-		else if (x % 5 == 0)
-			printf("Buzz ");
+		else if (i % 5 == 0)
+		{
+			if (i < x)
+				printf("Buzz ");
+			else
+				print("Buzz");
+		}
 		else
-			printf("%d ", x);
+		{
+			printf("%i ", i);
+		}
+		i++;
+
 	}
 	printf("\n");
+	return (0);
 }
 
